@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Karla:wght@200&family=Roboto+Slab:wght@100&family=Work+Sans:wght@300&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(17, 46, 71);
+    color: aliceblue;
+}
+li{
+    list-style-type: none;
+}
+.Navbar_small ol{
+    padding: 0.5%;
+   
+    left: 50%;
+}
+
+.p {
+    background-color: aliceblue;
+    height: 8px;
+}
+
+h3:hover {
+    color: #000000;
+}
+
+.p2 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 249, 251);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+    padding-top: 20px;
+
+}
+
+
+.p2 h2:hover {
+    color: rgb(20, 64, 106);
+}
+
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.last-li {
+    padding: 100;
+}
+
+.oneimg {
+
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.oneimg img {
+    width: 100%;
+
+}
+
+.concept {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.concept h1:hover{
+    color: antiquewhite;
+}
+
+.image {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image img {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-inner .item a img {
+
+    margin: auto;
+
+}
+
+.carousel-item img {
+    width: auto;
+    height: 450px;
+    max-height: 450px;
+    margin: auto;
+    display: block;
+}
+
+.card {
+    padding: 5%;
+    border-radius: 0%;
+
+}
+
+.main_footer {
+    background-color: #232D4B;
+    width: 100%;
+    height: 350px;
+    padding: 80px;
+    
+}
+
+
+
+.content {
+    background-color: aliceblue;
+    color: black;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Work Sans', sans-serif;
+    padding: 5%;
+}
+
+/* footer */
+
+.para h4{
+    text-align: center;
+}
+.para h4:hover{
+    color: rgb(63, 109, 225);
+}
+.social_links li{
+    text-align: center;
+}
+
+.secondblock block_content{
+    text-align: center;
+}
+/* .block_content p{
+    position: absolute;
+    
+    bottom: 0%;
+} */
+
+.pp{
+    text-align: center;
+    padding: 70px;
+    margin: 10px;
+}
+.block_content{
+    text-align: center;
+}
+.pp:hover{
+    color: rgb(10, 10, 10);
+}
+
+.para2{
+padding: 1%;
+font-family: 'BhuTuka Expanded One', cursive;
+font-family: 'Karla', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Work Sans', sans-serif;
+
+
+}
+
+.para2 :hover{
+    color: #000000;
+}
+

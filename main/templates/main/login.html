@@ -1,0 +1,319 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="shortcut icon" href="/myproject/static/img/loginimg.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Karla:wght@200&family=Roboto+Slab:wght@100&family=Work+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'BhuTuka Expanded One', cursive;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* The image used */
+      background-image: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 2px solid #f1f1f1;
+      border-radius: 7px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 22%;
+      padding: 25px;
+      text-align: center;
+    }
+
+    label,
+    input,
+    button {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: initial;
+    }
+
+    button {
+      padding: 10px;
+
+    }
+
+
+    /* style inputs and link buttons */
+    input,
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+      /* remove underline from anchors */
+    }
+
+    input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+
+    /* add appropriate colors to fb, twitter and google buttons */
+    .fb {
+      background-color: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background-color: #55ACEE;
+      color: white;
+    }
+
+    .google {
+      background-color:green;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+
+  <div class="bg-text">
+    <form action="/action_page.php" class="container">
+      <h1>Login</h1>
+
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">LOGIN</button>
+    </form>
+
+    <div class="vl">
+      <span class="vl-innertext">or</span>
+    </div>
+
+    <div class="col">
+      <a href="www.facebook.com" class="fb btn">
+        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+      </a>
+      <a href="www.twitter.com" class="twitter btn">
+        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+      </a>
+      <a href="www.google.com" class="google btn"><i class="fa fa-google fa-fw">
+        </i> Login with Google+
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="shortcut icon" href="/myproject/static/img/loginimg.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Karla:wght@200&family=Roboto+Slab:wght@100&family=Work+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'BhuTuka Expanded One', cursive;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* The image used */
+      background-image: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 2px solid #f1f1f1;
+      border-radius: 7px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 22%;
+      padding: 25px;
+      text-align: center;
+    }
+
+    label,
+    input,
+    button {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: initial;
+    }
+
+    button {
+      padding: 10px;
+
+    }
+
+
+    /* style inputs and link buttons */
+    input,
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+      /* remove underline from anchors */
+    }
+
+    input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+
+    /* add appropriate colors to fb, twitter and google buttons */
+    .fb {
+      background-color: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background-color: #55ACEE;
+      color: white;
+    }
+
+    .google {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+
+  <div class="bg-text">
+    <form action="" method="post" class="container">
+      {% csrf_token %}
+      <h1>Login</h1>
+
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass1" required>
+
+      <button type="submit" class="btn">LOGIN</button>
+    </form>
+
+    <div class="vl">
+      <span class="vl-innertext">or</span>
+    </div>
+
+    <div class="col">
+      <a href="www.facebook.com" class="fb btn">
+        <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+      </a>
+      <a href="www.twitter.com" class="twitter btn">
+        <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+      </a>
+      <a href="www.google.com" class="google btn"><i class="fa fa-google fa-fw">
+        </i> Login with Google+
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

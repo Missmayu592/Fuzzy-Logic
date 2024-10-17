@@ -1,0 +1,313 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp</title>
+    <link rel="shortcut icon" href="/static/img/studentx.png" type="image/x-icon">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+    <style>
+        body {
+            margin: 0;
+            padding: 130px;
+            display: flex;
+        }
+
+        .left {
+            flex: 1;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left" >
+        <img src="https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=426&q=80" alt="Image" width="550" height="450">
+    </div>
+    <div class="right" id="form">
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form onsubmit="event.preventDefault(); submitForm();">
+                <div class="labelname">
+                    <label for="fullname">FullName</label>
+                </div>
+                <div class="fname">
+                    <input type="text" name="fname" id="fname" placeholder="FullName" size="30" required>
+                </div><br>
+                <div class="labelemail">
+                    <label for="email">Email</label>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" id="email" placeholder="@Email" size="30" required>
+                </div><br>
+                <div class="labelpassword">
+                    <label for="password">Password</label>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password" placeholder="Password" size="30"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required>
+                </div><br>
+                <div class="labelconfirmpassword">
+                    <label for="confirm-password">Confirm Password</label>
+                </div>
+                <div class="confirm_password">
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
+                        size="30" required>
+                    <div class="field">
+                        <span id="message"></span>
+                    </div>
+                </div><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        I agree to the term of sign up
+                    </label>
+                </div>
+                <br>
+               
+                <button type="submit" name="submit" id="submit-pass">Signup</button>
+                
+            </form>
+        </div>
+
+    </div>
+    <div id="success" style="display: none;">
+        <h1>Signup Successful!</h1>
+        <p>Your account has been created successfully.</p>
+        <p>Redirecting to homepage...</p>
+
+    <script>
+        $(() => {
+            $('#password, #confirm-password').on('keyup', function () {
+                if ($('#password').val() == "" && $('#confirm-password').val() == "") {
+                    $('#submit-pass').prop('disabled', true);
+                    $('#message').hide();
+                } else if ($('#password').val() == $('#confirm-password').val()) {
+                    $('#submit-pass').prop('disabled', false);
+                    $('#message').show().html('Password Match').css('color', 'green');
+                } else {
+                    $('#submit-pass').prop('disabled', true);
+                    $('#message').show().html('Password do not match').css('color', 'red');
+                }
+            });
+        });
+
+
+        function submitForm() {
+      // Perform necessary form validation and processing
+      
+      // Assuming the form submission is successful, show success message and redirect
+      document.getElementById('form').style.display = 'none';
+      document.getElementById('success').style.display = 'block';
+      setTimeout(function() {
+        window.location.href = 'fullpage.html/';
+      }, 3000); // Redirect to homepage after 3 seconds
+    }
+
+    </script>
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>SignUp</title>
+        <link rel="shortcut icon" href="/static/img/studentx.png" type="image/x-icon">
+        <!-- import jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- check password confirmation -->
+
+        <style>
+            body {
+                margin: 0;
+                padding: 130px;
+                display: flex;
+            }
+
+            .left {
+                flex: 1;
+                background-color: #f2f2f2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .right {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .form-container {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .form-label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 8px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .form-submit {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="left">
+            <img src="https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=426&q=80" alt="Image" width="550" height="450"" alt="Image" width="300" height="200">
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <h1>Sign Up</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="labelname">
+                        <label for="fullname">FullName</label>
+                    </div>
+                    <div class="fname">
+                        <input type="text" name="fname" id="fname" placeholder="FullName" size="30" required>
+                    </div><br>
+                    <div class="labelemail">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="@Email" size="30" required>
+                    </div><br>
+                    <div class="labelpassword">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="pass1" id="password" placeholder="Password" size="30"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                    </div><br>
+                    <div class="labelconfirmpassword">
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <div class="confirm_password">
+                        <input type="password" name="pass2" id="confirm-password" placeholder="Confirm Password"
+                            size="30" required>
+                        <div class="field">
+                            <span id="message"></span>
+                        </div>
+                    </div><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I agree to the term of sign up
+                        </label>
+                    </div>
+                    <br>
+                    <input type="submit" name="submit" 30 size="" requird value="submit" id="submit-pass">
+
+                </form>
+
+
+                <h4>Already have accout ? <a href="signin/">Login here</a></h4>
+                <h4>Already have accout ? <a href="sign_out/">Log out </a></h4>
+            </div>
+        </div>
+
+        <script>
+            $(() => {
+                $('#password, #confirm-password').on('keyup', function () {
+                    if ($('#password').val() == "" && $('#confirm-password').val() == "") {
+                        $('#submit-pass').prop('disabled', true);
+                        $('#message').hide();
+                    } else if ($('#password').val() == $('#confirm-password').val()) {
+                        $('#submit-pass').prop('disabled', false);
+                        $('#message').show().html('Password Match').css('color', 'green');
+                    } else {
+                        $('#submit-pass').prop('disabled', true);
+                        $('#message').show().html('Password do not match').css('color', 'red');
+                    }
+                });
+            });
+
+        </script>
+
+    </body>
+
+</html>

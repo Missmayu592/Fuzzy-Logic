@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Form</title>
+  <script>
+    function submitForm() {
+      // Perform necessary form validation and processing
+      
+      // Assuming the form submission is successful, show success message and redirect
+      document.getElementById('form').style.display = 'none';
+      document.getElementById('success').style.display = 'block';
+      setTimeout(function() {
+        window.location.href = 'fullpage.html';
+      }, 3000); // Redirect to homepage after 3 seconds
+    }
+  </script>
+</head>
+<body>
+  <div id="form">
+    <h1>Signup Form</h1>
+    <!-- Signup form -->
+    <form onsubmit="event.preventDefault(); submitForm();">
+      <!-- Form fields -->
+      <input type="text" name="name" placeholder="Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+  
+  <div id="success" style="display: none;">
+    <h1>Signup Successful!</h1>
+    <p>Your account has been created successfully.</p>
+    <p>Redirecting to homepage...</p>
+  </div>
+</body>
+</html>

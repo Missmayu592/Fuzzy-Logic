@@ -1,0 +1,206 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="shortcut icon" href="{% static 'main/aboutus.png' %}" type="image/x-icon">
+
+        <style>
+            /* Add your custom styles here */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+                margin: 0;
+                padding: 20px;
+
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            p {
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+
+
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .title {
+                color: grey;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .button:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Completing a task is never a one man’s effort; it is the result of invaluable
+                contribution of a number of individuals. Our project too is the outcome of sincere team
+                work.
+                We express our heart-felt thanks to our project guide Prof.Kalpana Malpe,
+                Department of Computer Science & Engineering. She has been a constant efforts
+                throughout for the achievement of this unique task. From time to times she guided us on the
+                right path.
+                We express our thanks to Dr. Balram Timande, Head, Department of Computer
+                Science & Engineering. His amicable attitude along with the extended cooperation proved
+                to be very helpful. We also convey a deep sense of gratitude to our Principal Dr. Hemant
+                Hajare . His whole hearted co-operation proved to be very helpful.
+                Our acknowledgement would be incomplete if we fail to mention the continuous
+                encouragement and moral support give by our departmental staff members.
+                And finally we avail this opportunity to express our sincere thanks to all the persons
+                who have helped us tread the path towards the successful completion of this project.
+                This paper proposes a fuzzy logic-based method for evaluating the academic performance of students,
+                taking
+                into account multiple factors that influence their performance. The results of applying the proposed
+                method
+                to a dataset of students' performance show that the method provides a more comprehensive and accurate
+                evaluation system compared to traditional methods. The proposed method can be easily implemented in
+                education systems and can provide useful insights for educators and students alike. Further research can
+                explore the use of fuzzy logic in other areas of education and its potential impact on student learning
+                outcomes.
+            </p>
+        </div>
+
+        <h2 class="h2">Meet Our Team</h2>
+        <p class="p2">Future Software Engineers.</p>
+        <br>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>Mayuri Sonkusare</h2>
+                        <p class="title">Coder</p>
+                        <p>Software Engineer with lots of ideas.</p>
+                        <p>sonkusaremayuri523@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>Bhawana Ikhar</h2>
+                        <p class="title">Structure coder</p>
+                        <p>Creating fantastic structure of our project.</p>
+                        <p>bhawanaikhar@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>Silky Pandey</h2>
+                        <p class="title">Designer</p>
+                        <p>Girl who can do everyting with presence of mind.</p>
+                        <p>silkypandey@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>Sampada Bhosale</h2>
+                        <p class="title">software Freshee</p>
+                        <p>Learn in fast way which grab everything.</p>
+                        <p>bhosalesampada8@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>Yugal Raut</h2>
+                        <p class="title">Member</p>
+                        <p>Hey I am yugal raut.</p>
+                        <p>yugalraut@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

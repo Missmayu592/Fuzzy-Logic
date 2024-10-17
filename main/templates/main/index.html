@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <!-- <H1>{{para}} and {{mylist}}</H1> -->
+
+        <!-- for loop used  for the list
+        forloop.counter - count the value of data type
+        forloop.revcounter - reverse the value
+        forloop.first - get st value active/true and other will false
+        -->
+        {% for n in mylist %}
+        <div>{{forloop.counter}} {{n}}</div>
+        {% endfor %}
+
+
+<Br></Br>
+ <!-- For Loop for the dictionary -->
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+            </tr>
+            {% for d in student_data %}
+            <tr>
+                <td>{{d.Name}}</td>
+                <td>{{d.phone}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% for n in number %}
+
+        <div>{{n}}</div>
+
+        {% endfor %}
+        <br>
+        {% for n in number %}
+           {% if n > 80 %}
+             <div>Greater than 80: {{n}}</div>
+           {% endif %}
+
+        {% endfor %}
+
+        <br>
+    {% if number|length > 0 %}
+
+        {% for n in number %}
+           {% if n > 80 %}
+             <div>{{n}}</div>
+           {% endif %}
+
+        {% endfor %}
+    {% else %}
+          No Data Found
+    {% endif%}
+          
+
+
+    </body>
+</html>
